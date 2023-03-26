@@ -51,7 +51,6 @@ function download(filename, text) {
 document.getElementById("saveButton").addEventListener(
   "click",
   function () {
-    // Generate download of hello.txt file with some content
     const text = `Password saya: ${password.value}`;
     var filename = "MyPasswordGenerator.txt";
 

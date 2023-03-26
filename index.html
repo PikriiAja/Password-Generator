@@ -16,21 +16,30 @@
     <div
       class="container d-flex justify-content-center align-items-center min-vh-100"
     >
-      <div class="d-flex flex-column">
+      <div class="d-flex flex-column rounded-4">
         <h1>Password Generator</h1>
         <div class="d-flex flex-column gap-2 mt-3">
           <label for="passwordLength" class="fw-bold">Panjang Password</label>
-          <input type="number" class="form-control" id="passwordLength" />
+          <input
+            type="number"
+            class="form-control rounded-3 border border-primary-subtle border-2"
+            id="passwordLength"
+          />
           <label for="Password" class="fw-bold">Password</label>
-          <input type="text" class="form-control" id="password" disabled />
+          <input
+            type="text"
+            class="form-control rounded-3"
+            id="password"
+            disabled
+          />
           <button
-            class="btn btn-primary text-uppercase fw-bold mt-3"
+            class="btn btn-primary rounded-pill text-uppercase fw-bold mt-3"
             onclick="getPassword()"
           >
             Generate
           </button>
           <button
-            class="btn btn-dark text-uppercase fw-bold mt-3"
+            class="btn btn-outline-dark rounded-pill text-uppercase fw-bold mt-3"
             onclick="savePassword()"
             id="saveButton"
           >
